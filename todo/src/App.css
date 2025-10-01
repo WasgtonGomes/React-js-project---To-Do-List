@@ -1,0 +1,62 @@
+body{
+  font-family: Arial; /* Fonte do testo*/
+  background-color: #f4f4f4; /*Cor de fundo*/
+  padding: 30px; /* espaçamento no conteudi dos todo*/
+  color: #333; /* cor principal da aplicação*/
+  background-image: url('./img/Montistaty.jpg');/*Imagem de fundo*/
+  background-position: center; /*posição da imagem no centro*/
+  background-size: cover; /*Fazer a imagem aparecer o maximo posivel*/
+}
+
+.app{
+  max-width: 600px; /*Largura maxima*/
+  margin: 0 auto 300px; /*define uma margem 0 auto e uma margin borium de 300px*/
+  background-color: #efefef; /*cor de fundo*/
+  padding: 20px 30px; /* interno para esse elemento*/
+  border-radius: 10px; /* bordas aredondadas*/
+}
+
+h1{
+  text-align: center; /*para centralizar os texto do h1*/
+}
+
+h2{
+  margin-bottom: 10px; 
+}
+
+p{
+  margin: 10px 0;
+}
+
+input{
+  box-sizing: border-box; /* para que ele não passe da area do seu elemento pai*/
+}
+
+button{
+  background-color: #333974;
+  color: #fff;
+  padding: 5px 10px; /*Espaçamento interno*/
+  border: none; /*Remove as bordas*/
+  border-radius: 3px /*Aredondar as bordas*/;
+  cursor: pointer /*Quando passar o ponteiro do mouse mudar da seta patra mãozinha*/;
+  opacity: .8;  /*Taxa de opactsidade*/
+  transition: .3s; /*tempo da Transição*/
+
+}
+
+button:hover{
+  opacity: 1;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px; /* segue como mesmo padrão geral do projeto para os elementos*/
+  width: 100%; /* largura de 100%*/
+
+}
