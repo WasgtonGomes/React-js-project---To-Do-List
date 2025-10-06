@@ -36,6 +36,7 @@ button{
   background-color: #333974;
   color: #fff;
   padding: 5px 10px; /*Espaçamento interno*/
+  margin-right: 10px;
   border: none; /*Remove as bordas*/
   border-radius: 3px /*Aredondar as bordas*/;
   cursor: pointer /*Quando passar o ponteiro do mouse mudar da seta patra mãozinha*/;
@@ -48,6 +49,22 @@ button:hover{
   opacity: 1;
 }
 
+.todo-list{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555
+}
+
+.todo{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1 ); /* coloca um detalhe ao redor do item*/
+  padding:10px ; /* Espaçamento interno entre os elemntos do todo*/
+  margin-bottom: 10px; /* para afastar um componente do outro */
+  border-radius: 5px; /*5px para seguir o o padrão aredondado do projeto*/
+  display: flex;
+  justify-content: space-between; /* Alinha na horozontal*/
+  align-items: center; /* alinha os itens na vertical*/
+}
 .complete {
   background-color: #5cb85c;
 }

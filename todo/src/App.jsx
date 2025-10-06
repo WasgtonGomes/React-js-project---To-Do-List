@@ -29,7 +29,9 @@ function App() {
   ])
 
   const addTodo = (text, category) => {/**Essa vai ser uma função que vai adicionar o todo na lista  */
-      const addTodos = [...todos, {
+      const newTodos= [
+        ...todos, 
+        {
         id: Math.floor(Math.random()*10000), /** Math.floor(Math.random()*10000): Função que vai gerar um numero aleatório para o id*/
         text, /**vem do componete do formulario */
         category,/**vem do componete do formulario */
@@ -48,7 +50,7 @@ function App() {
       key={todo.id}: Agora o react tem uma chave unica para cada componente*/
       ))}
     </div>
-    <TodoForm/>
+    <TodoForm addTodo = {addTodo}/>
    </div>
   )
 }

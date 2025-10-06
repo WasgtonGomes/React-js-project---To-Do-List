@@ -1,6 +1,6 @@
 import { useState} from 'react' /*O useState imporatndo vamso conseguir gerenciar o texto e categoria */
 
-const TodoForm = () => {
+const TodoForm = ({addTodo}) => {
     const [value, setValue]= useState("");
     const [category, setCategory] = useState ("");
 
@@ -8,6 +8,7 @@ const TodoForm = () => {
         e.preventDefault(); /*Para que o formulario não seja enviado da maneira tradicional */
         if(!value|| !category) return; {/** validação para valores não julos */}
         //adicionar todo
+        addTodo(value, category);
         setValue("");
         setCategory("");
         
