@@ -45,6 +45,8 @@ button{
 
 }
 
+
+
 button:hover{
   opacity: 1;
 }
@@ -85,3 +87,4 @@ input, select{
   width: 100%; /* largura de 100%*/
 
 }
+
