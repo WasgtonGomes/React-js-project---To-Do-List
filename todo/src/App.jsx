@@ -41,6 +41,11 @@ function App() {
       setTodos(newTodos); 
   }
 
+  const removeTodo = (id) =>{ /* Aqui fica a função que vai remover os todos */
+    const newTodos = [...todos] /* variavel com todos os todos*/
+
+  }
+
   return (
    <div className="app">
     <h1>Lista de Tarefas</h1>
