@@ -37,7 +37,7 @@ function App() {
         category,/**vem do componete do formulario */
         isCompleted: false, /** o atributo de completo já começa com falso */
       }];
-
+  
       setTodos(newTodos); 
   }
 
