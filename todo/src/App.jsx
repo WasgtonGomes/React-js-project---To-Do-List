@@ -26,7 +26,7 @@ function App() {
       category: "Estudos",
       isCompleted: false,
     },
-  ])
+  ])  
 
   const addTodo = (text, category) => {/**Essa vai ser uma função que vai adicionar o todo na lista  */
       const newTodos= [
