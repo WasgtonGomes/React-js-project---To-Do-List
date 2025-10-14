@@ -43,6 +43,10 @@ function App() {
 
   const removeTodo = (id) =>{ /* Aqui fica a função que vai remover os todos */
     const newTodos = [...todos] /* variavel com todos os todos*/
+    const filteredTodos =  newTodos.filter(todo=>
+       todo.id !== id ? todo: null
+      );
+      setTodos(filteredTodos);
 
   }
 
@@ -51,7 +55,7 @@ function App() {
     <h1>Lista de Tarefas</h1>
     <div className="todo-list">
       {todos.map((todo)=>(
-      <Todo key={todo.id} todo={todo} /> /* Aqui está dizendo que a propriedade todo tem o valor de todo que é um objeto
+      <Todo key={todo.id} todo={todo} removeTodo={removeTodo} /> /* Aqui está dizendo que a propriedade todo tem o valor de todo que é um objeto
       key={todo.id}: Agora o react tem uma chave unica para cada componente*/
       ))}
     </div>
