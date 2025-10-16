@@ -4,7 +4,7 @@ import Todo from './components/Todo';
 
 import "./App.css";
 import TodoForm from './components/TodoForm';
-
+ 
 
 function App() {
   const [todos, setTodos] = useState([ /**os State tem o poder de renderizar os componentes e de rederizar */
