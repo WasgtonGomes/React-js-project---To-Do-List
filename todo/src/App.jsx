@@ -49,7 +49,7 @@ function App() {
       setTodos(filteredTodos);
 
   }
-
+ 
   const completeTodo = (id) =>{
     const newTodos = [...todos]
     /*newTodos.map((todo)=> todo.id ===id ? todo.isCompleted = !todo.isCompleted) /**Diferente do filter o map modifica o array original. Valido o id com id se eles são iguais. E  */ 
