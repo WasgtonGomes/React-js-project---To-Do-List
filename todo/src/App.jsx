@@ -52,15 +52,19 @@ function App() {
  
   const completeTodo = (id) =>{
     const newTodos = [...todos]
-    /*newTodos.map((todo)=> todo.id ===id ? todo.isCompleted = !todo.isCompleted) /**Diferente do filter o map modifica o array original. Valido o id com id se eles são iguais. E  */ 
-  }
+    newTodos.map((todo)=> 
+        todo.id ===id ? (todo.isCompleted = !todo.isCompleted) : todo    /**Diferente do filter o map modifica o array original. Valido o id com id se eles são iguais. E se o ide não for igual só retornar o todo.  */ 
+    );
+    setTodos(newTodos); /** aqui eu posso atualizar a lista completa com todos os meu todos */
+
+   }
 
   return (
    <div className="app">
     <h1>Lista de Tarefas</h1>
     <div className="todo-list">
       {todos.map((todo)=>(
-      <Todo key={todo.id} todo={todo} removeTodo={removeTodo} /> /* Aqui está dizendo que a propriedade todo tem o valor de todo que é um objeto
+      <Todo key={todo.id} todo={todo} removeTodo={removeTodo}  completeTodo={completeTodo}/> /* Aqui está dizendo que a propriedade todo tem o valor de todo que é um objeto
       key={todo.id}: Agora o react tem uma chave unica para cada componente*/
       ))}
     </div>
