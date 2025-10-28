@@ -21,7 +21,7 @@ const TodoForm = ({addTodo}) => {
         placeholder="Digite o título"
         value={value}
         onChange={e => setValue(e.target.value)} /> {/* aqui vai funcionar quando o usuário digita; 
-         Au mudar o falor aqui eu vou ter uma função sendo execultada  que carrega todos os dados do evento atual
+         Au mudar o valor aqui eu vou ter uma função sendo execultada  que carrega todos os dados do evento atual
         setValue: função que muda o estato de value;  e. : é o evento ; target: é o imput ; value: que é o valor do imput*/}
         
         <select  value={category} /* Com isso eu consigo manipular os valores com o react*/onChange={e => setCategory(e.target.value)} > {/*Aqui vai funionar quando o usuário mudar a option */}
