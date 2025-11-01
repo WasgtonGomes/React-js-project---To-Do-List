@@ -6,7 +6,7 @@ const TodoForm = ({addTodo}) => {
 
     const handleSubmit = (e) =>{ /*Essa dunção vai cuidar do sibmit do formulario */
         e.preventDefault(); /*Para que o formulario não seja enviado da maneira tradicional */
-        if(!value|| !category) return; {/** validação para valores não julos */}
+        if(!value|| !category) return; {/** validação para valores não nulos */}
         //adicionar todo
         addTodo(value, category);
         setValue("");
