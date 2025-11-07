@@ -6,7 +6,7 @@ const Filter = () => {
       <div className="filter-options">
         <div>Status: </div>
       </div>
-    </div>
+    </div> 
   )
 } 
   
